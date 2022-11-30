@@ -1,0 +1,30 @@
+/*@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./fonts/MyFont.woff) format('woff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' 
+  }*/
+
+  /*.overlay {
+    z-index: 1;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    will-change: opacity;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 990px;
+  }*/
+  
+  /*.overlay a {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    left: 50%;
+  
+    transform: translateX(-50%);
+  }*/
