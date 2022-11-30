@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedRoutes from './AnimatedRoutes.js';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
 } from 'react-router-dom';
 import customTheme from './theme/theme';
 import {
@@ -11,7 +11,7 @@ import {
 import Header from './Layout/header';
 import Footer from './Layout/footer';
 import './theme/styles.css';
-
+//BrowserRouter..
 function App() {
   const { colorMode, setColorMode } = useColorMode();
   if (colorMode === undefined) setColorMode('light');

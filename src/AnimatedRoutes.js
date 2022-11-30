@@ -13,12 +13,12 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/portafolio-armijo/" element={<Navigate to="/inicio" replace />} />
-        <Route path="/portafolio-armijo/inicio" element={<Index />} />
-        <Route path="/portafolio-armijo/about" element={<About />} />
-        <Route path="/portafolio-armijo/contact" element={<Contact />} />
-        <Route path="/portafolio-armijo/projects" element={<Projects />} />
-        <Route path="/portafolio-armijo/test" element={<Test />} />
+        <Route path="/" element={<Navigate to="/inicio" replace />} />
+        <Route path="/inicio" element={<Index />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </AnimatePresence>
   );
