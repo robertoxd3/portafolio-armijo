@@ -26,11 +26,13 @@ import { useMediaQuery } from '@chakra-ui/media-query';
 import About from './about';
 import Proyects from './projects';
 import Contact from './contactForm';
+import { useNavigate } from "react-router-dom";
 
 const ANIMATION_DURATION = 0.5;
 const color = 'blue.400';
 
 function Index() {
+  const navigate = useNavigate();
   const { colorMode } = useColorMode();
   const isDark = colorMode === 'dark';
 
@@ -126,7 +128,8 @@ function Index() {
                 <Button
                   colorScheme="teal"
                   variant="outline"
-                //onClick={() => {this.scroll(this.myRef)}}
+
+                  onClick={() => navigate("/contact")}
                 >
                   Contactame
                 </Button>
