@@ -14,7 +14,7 @@ import { NavLink } from 'react-router-dom';
 import { FiSun, FiMenu } from 'react-icons/fi';
 import { FaMoon } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import Logo from '../assets/logoC.svg';
+
 import { motion, AnimatePresence } from 'framer-motion';
 const breakpoints = ['360px', '768px', '1024px', '1440px'];
 breakpoints.base = breakpoints[0];
@@ -70,8 +70,8 @@ const Header = props => {
         justifyContent={{ base: 'space-between', md: 'flex-start' }}
       >
         <Heading as="h1" size="lg" letterSpacing={'-.1rem'}>
-          <Link as={NavLink} to="/" onClick={() => setShow(false)}>
-            <Image boxSize="60px" objectFit="cover" src={Logo} />
+          <Link as={NavLink} to="/portafolio-armijo" onClick={() => setShow(false)}>
+            <Image boxSize="60px" objectFit="cover" src={process.env.PUBLIC_URL + "/logoC.svg"} />
           </Link>
         </Heading>
 
@@ -101,7 +101,7 @@ const Header = props => {
       >
         <Link
           as={NavLink}
-          to="/"
+          to="/portafolio-armijo"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}
@@ -122,7 +122,7 @@ const Header = props => {
 
         <Link
           as={NavLink}
-          to="/about"
+          to="/portafolio-armijo/about"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}
@@ -144,7 +144,7 @@ const Header = props => {
 
         <Link
           as={NavLink}
-          to="/contact"
+          to="/portafolio-armijo/contact"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}
@@ -164,7 +164,7 @@ const Header = props => {
         </Link>
         <Link
           as={NavLink}
-          to="/projects"
+          to="/portafolio-armijo/projects"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}

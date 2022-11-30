@@ -83,7 +83,7 @@ function About() {
                 size="2xl"
                 showBorder={true}
                 borderColor={color}
-                src={"yo.jpg"}
+                src={process.env.PUBLIC_URL + "/yo.jpg"}
               />
             </MotionBox>
           </MotionBox>

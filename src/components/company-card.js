@@ -38,7 +38,7 @@ function Company({
               w={16}
               h={16}
               objectFit="cover"
-              fallbackSrc={'/assets/images/placeholder.png'}
+              fallbackSrc={process.env.PUBLIC_URL + '/placeholder.png'}
               src={logo}
               alt={alt}
             />
@@ -77,7 +77,7 @@ function Company({
           mt={3}
           isInline
           alignItems="center"
-          //display={['flex', 'flex', 'none', 'none']}
+        //display={['flex', 'flex', 'none', 'none']}
         >
           {skills.split(',').map(skill => (
             <Tag size="sm" padding="0 3px" key={skill} fontWeight="bold">

@@ -145,7 +145,7 @@ function Index() {
               boxShadow="lg"
               boxSize={{ base: '200px', md: '230px', lg: '250px' }}
               borderColor={color}
-              src={'yo.jpg'}
+              src={process.env.PUBLIC_URL + '/yo.jpg'}
             />
           </MotionBox>
         </Flex>
