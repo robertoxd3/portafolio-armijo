@@ -70,7 +70,7 @@ const Header = props => {
         justifyContent={{ base: 'space-between', md: 'flex-start' }}
       >
         <Heading as="h1" size="lg" letterSpacing={'-.1rem'}>
-          <Link as={NavLink} to="/portafolio-armijo" onClick={() => setShow(false)}>
+          <Link as={NavLink} to="/" onClick={() => setShow(false)}>
             <Image boxSize="60px" objectFit="cover" src={process.env.PUBLIC_URL + "/logoC.svg"} />
           </Link>
         </Heading>
@@ -101,7 +101,7 @@ const Header = props => {
       >
         <Link
           as={NavLink}
-          to="/portafolio-armijo"
+          to="/"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}
@@ -122,7 +122,7 @@ const Header = props => {
 
         <Link
           as={NavLink}
-          to="/portafolio-armijo/about"
+          to="/about"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}
@@ -144,7 +144,7 @@ const Header = props => {
 
         <Link
           as={NavLink}
-          to="/portafolio-armijo/contact"
+          to="/contact"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}
@@ -164,7 +164,7 @@ const Header = props => {
         </Link>
         <Link
           as={NavLink}
-          to="/portafolio-armijo/projects"
+          to="/projects"
           textAlign={{ base: 'center', md: '' }}
           fontWeight={{ base: 'bold', md: '' }}
           borderRadius={{ base: '5px' }}
