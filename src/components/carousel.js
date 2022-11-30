@@ -84,7 +84,7 @@ function Carousel({ logo }) {
                   {sid + 1} / {slidesCount}
                 </Text>
                 <Image
-                  src={slide}
+                  src={process.env.PUBLIC_URL + "/" + slide}
                   alt="carousel image"
                   boxSize="full"
                   backgroundSize="cover"
