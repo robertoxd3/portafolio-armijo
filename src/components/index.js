@@ -36,14 +36,14 @@ function Index() {
 
   const DownloadPDF = () => {
     // using Java Script method to get PDF file
-    fetch('resume.pdf').then(response => {
+    fetch(process.env.PUBLIC_URL + '/RobertoArmijoCV.pdf').then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'resume.pdf';
+        alink.download = 'RobertoArmijoCV.pdf';
         alink.click();
       });
     });
