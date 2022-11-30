@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portafolio-armijo/static/css/main.31d6cfe0.css",
-    "main.js": "/portafolio-armijo/static/js/main.0f64e673.js",
+    "main.js": "/portafolio-armijo/static/js/main.32218726.js",
     "static/js/787.93e4b3c8.chunk.js": "/portafolio-armijo/static/js/787.93e4b3c8.chunk.js",
     "index.html": "/portafolio-armijo/index.html",
-    "main.0f64e673.js.map": "/portafolio-armijo/static/js/main.0f64e673.js.map",
+    "main.32218726.js.map": "/portafolio-armijo/static/js/main.32218726.js.map",
     "787.93e4b3c8.chunk.js.map": "/portafolio-armijo/static/js/787.93e4b3c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.0f64e673.js"
+    "static/js/main.32218726.js"
   ]
 }
