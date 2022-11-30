@@ -2,15 +2,10 @@ import React from 'react';
 import AnimatedRoutes from './AnimatedRoutes.js';
 import {
   BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
 } from 'react-router-dom';
 import customTheme from './theme/theme';
 import {
   useColorMode,
-  Box,
-  ThemeProvider,
   ChakraProvider,
 } from '@chakra-ui/react';
 import Header from './Layout/header';
