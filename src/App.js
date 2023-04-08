@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AnimatedRoutes from './AnimatedRoutes.js';
 import {
   HashRouter as Router,
@@ -11,8 +11,14 @@ import {
 import Header from './Layout/header';
 import Footer from './Layout/footer';
 import './theme/styles.css';
+import './App.css';
+import { animateScroll } from "react-scroll";
 //BrowserRouter..
 function App() {
+  useEffect(() => {
+    animateScroll.scrollToTop({ duration: 0 });
+  }, []);
+
   const { colorMode, setColorMode } = useColorMode();
   if (colorMode === undefined) setColorMode('light');
   const brandColorTheme =

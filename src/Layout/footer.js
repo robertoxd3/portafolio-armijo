@@ -7,7 +7,10 @@ import {
   FaVoicemail,
 } from 'react-icons/fa';
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
+
   return (
     <Box
       maxWidth="68rem"
@@ -18,7 +21,7 @@ const Footer = () => {
       px={10}
       w="100%"
 
-      //borderTop="1px solid"
+    //borderTop="1px solid"
     >
       <Stack
         direction={{ base: 'column', md: 'row' }}
@@ -27,7 +30,7 @@ const Footer = () => {
         justifyContent={{ base: 'center', md: 'space-between' }}
       >
         <Text fontSize={{ base: '16px', md: '16px' }}>
-          &copy; 2022 Roberto Armijo
+          &copy; {currentYear} Roberto Armijo
         </Text>
 
         <Stack spacing={2} direction={{ base: 'row', md: 'row' }}>

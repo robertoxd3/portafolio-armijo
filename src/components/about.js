@@ -51,15 +51,14 @@ function About() {
   const color = 'blue.400';
 
   return (
-    <Container maxW={'7xl'} pt={{ base: '5rem', md: '1' }}>
+    <Box maxW="7xl" mx="auto" pt={{ base: '9rem', md: '0' }} >
       <Stack
         textAlign={'center'}
         align={'center'}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 5, md: 10 }}
         maxWidth="68rem"
-        marginLeft="auto"
-        marginRight="auto"
+        mx="auto"
       >
         <Flex direction={['column', 'column', 'row']}>
           <MotionBox
@@ -83,7 +82,7 @@ function About() {
                 size="2xl"
                 showBorder={true}
                 borderColor={color}
-                src={process.env.PUBLIC_URL + "/yo.jpg"}
+                src={process.env.PUBLIC_URL + "/yo2.jpg"}
               />
             </MotionBox>
           </MotionBox>
@@ -128,8 +127,7 @@ function About() {
               mt={3}
               textAlign="justify"
             >
-              Esta es mi zona digital, donde escribo y comparto sobre las cosas
-              que he aprendido a lo largo de los años 😎.
+              Aquí aprenderas sobre mi persona y lo que he aprendido a lo largo de los años 😎.
             </Text>
           </MotionFlex>
         </Flex>
@@ -170,7 +168,7 @@ function About() {
           ))}
         </VStack>
       </motion.div>
-    </Container>
+    </Box>
   );
 }
 
